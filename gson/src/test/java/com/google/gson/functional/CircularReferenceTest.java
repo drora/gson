@@ -56,13 +56,13 @@ public class CircularReferenceTest extends TestCase {
     }
   }
 
-  /*public void testSelfReferenceIgnoredInSerialization() throws Exception {
+  public void testSelfReferenceIgnoredInSerialization() throws Exception {
     ClassOverridingEquals objA = new ClassOverridingEquals();
     objA.ref = objA;
 
     String json = gson.toJson(objA);
     assertFalse(json.contains("ref")); // self-reference is ignored
-  }*/
+  }
 
   public void testSelfReferenceArrayFieldSerialization() throws Exception {
     ClassWithSelfReferenceArray objA = new ClassWithSelfReferenceArray();
