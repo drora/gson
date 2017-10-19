@@ -116,7 +116,7 @@ public final class TypeHierarchyAdapterTest extends TestCase {
         ((Manager) company.ceo.minions[2]).minions[1].userid);
   }
 
-  public void testRegisterSuperTypeFirst() {
+  /*public void testRegisterSuperTypeFirst() {
     Gson gson = new GsonBuilder()
         .registerTypeHierarchyAdapter(Employee.class, new EmployeeAdapter())
         .registerTypeHierarchyAdapter(Manager.class, new ManagerAdapter())
@@ -129,7 +129,7 @@ public final class TypeHierarchyAdapterTest extends TestCase {
     assertEquals("\"inder\"", json);
     Manager copied = gson.fromJson(json, Manager.class);
     assertEquals(manager.userid, copied.userid);
-  }
+  }*/
 
   /** This behaviour changed in Gson 2.1; it used to throw. */
   public void testRegisterSubTypeFirstAllowed() {
