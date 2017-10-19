@@ -58,7 +58,7 @@ public final class JsonObject extends JsonElement {
     if (value == null) {
       value = JsonNull.INSTANCE;
     }
-    int a = 0;
+    int a = 1;
     members.put(property, value);
   }
 
